@@ -7,6 +7,13 @@ This project demonstrates a simple steganography tool implemented in Python usin
 - **Message Extraction**: Retrieves the hidden message from an image.
 - **Passcode Security**: Requires a passcode for encrypting and decrypting messages.
 
+### How the Project Uses Caesar Cipher for Enhanced Security
+
+This project incorporates the Caesar cipher to add an additional layer of security to traditional steganography. Instead of directly embedding the plain text message into the image, the message undergoes a Caesar cipher encryption process. The cipher shifts the alphabets in the message by a key derived from the ASCII value of the provided passcode. Non-alphabetic characters remain unchanged, ensuring minimal distortion while enhancing security. This approach ensures that even if the steganography is compromised, the embedded message remains encrypted and protected.
+
+- Ensure the image has sufficient size to store the entire message.
+- The embedded message is secured using a passcode.
+
 ## Usage
 
 ### 1. Run the Notebook in Google Colab
